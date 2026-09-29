@@ -299,8 +299,6 @@ MonoBehaviour:
   ground: {fileID: 55615832}
   scoreText: {fileID: 1474871343}
   gameOver: {fileID: 298509898}
-  oscReceiver: {fileID: 2094674846}
-  oscTransmitter: {fileID: 2094674845}
 --- !u!4 &149568775
 Transform:
   m_ObjectHideFlags: 0
@@ -651,7 +649,6 @@ MonoBehaviour:
   strength: 5
   gravity: -9.81
   tilt: 5
-  oscReceiver: {fileID: 2094674846}
 --- !u!1 &892178073
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1055,7 @@ GameObject:
   - component: {fileID: 1644428181}
   - component: {fileID: 1644428180}
   - component: {fileID: 1644428179}
+  - component: {fileID: 1644428182}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1115,6 +1113,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644428182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1644428178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799272e4203f747849e75f41f6791fe8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 149568774}
+  player: {fileID: 527830928}
 --- !u!1 &1949728348
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1235,7 @@ GameObject:
   - component: {fileID: 2094674847}
   - component: {fileID: 2094674846}
   - component: {fileID: 2094674845}
+  - component: {fileID: 2094674848}
   m_Layer: 0
   m_Name: OSC
   m_TagString: Untagged
@@ -1288,6 +1301,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2094674848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094674844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8a8dec5196af4ba6b7dd328e3119e0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  oscReceiver: {fileID: 2094674846}
+  gameManager: {fileID: 149568774}
+  player: {fileID: 527830928}
 --- !u!1 &2105631070
 GameObject:
   m_ObjectHideFlags: 0
